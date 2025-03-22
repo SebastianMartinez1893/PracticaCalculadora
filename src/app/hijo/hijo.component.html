@@ -1,0 +1,20 @@
+<div class="container mt-5">
+    <div class="d-flex justify-content-center">
+        <div class="w-25  text-center">
+            <div class="mb-3 mt-2">
+                <label for="inputTextA" class="form-label me-2 text-nowrap">Operando A </label>
+                <input id="inputTextA" type="number" (input)="CapturarA($event)" />
+            </div>
+            <div class="mb-3 mt-2">
+                <label for="inputTextB" class="form-label me-2 text-nowrap">Operando B</label>
+                <input id="inputTextB" type="number" (input)="CapturarB($event)" />
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-primary mb-3 w-100" (click)="Sumar()">Sumar</button>
+            </div>
+            <div class="mb-3">
+                <label for="inputTextB">Resultado: {{resultado}} </label>
+            </div>
+        </div>
+    </div>
+</div>
