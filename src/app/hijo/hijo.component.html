@@ -13,9 +13,7 @@
                 <button class="btn btn-primary mb-3 w-100" (click)="Sumar()">Sumar</button>
             </div> -->
         <app-formuiario (resultadoSuma)="ProcesarResultado($event)"/>
-            <div class="mb-3">
-                <label for="inputTextB">Resultado: {{resultado}} </label>
-            </div>
+        <app-resultado [entrada] = "resultado"/>
         </div>
     </div>
 </div>

@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { FormuiarioComponent } from "../formuiario/formuiario.component";
+import { ResultadoComponent } from "../resultado/resultado.component";
 
 @Component({
   selector: 'app-hijo',
   standalone: true,
-  imports: [FormuiarioComponent],
+  imports: [FormuiarioComponent, ResultadoComponent],
   templateUrl: './hijo.component.html',
   styleUrl: './hijo.component.css'
 })
