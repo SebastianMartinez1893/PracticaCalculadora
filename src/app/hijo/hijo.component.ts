@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
+import { FormuiarioComponent } from "../formuiario/formuiario.component";
 
 @Component({
   selector: 'app-hijo',
   standalone: true,
-  imports: [],
+  imports: [FormuiarioComponent],
   templateUrl: './hijo.component.html',
   styleUrl: './hijo.component.css'
 })
 export class HijoComponent {
+[x: string]: any;
 
   private a: number = 0;
   private b: number = 0;
@@ -26,5 +28,8 @@ export class HijoComponent {
 
   Sumar() {
     this.resultado = this.a + this.b
+  }
+  ProcesarResultado(resultado : number){
+this.resultado = resultado;
   }
 }
